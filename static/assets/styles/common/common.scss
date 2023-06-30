@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@use "./base/variables" as *;
+@use "./base/reset" as *;
+@use "./base/mixin" as *;
+@use "./base/functions" as *;
+
+// common styles
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+  width: 100%;
+  font-family: var(--ff_main);
+  font-weight: 500;
+  scroll-padding-top: 90px;
+  @include break {
+    scroll-padding-top: 70px;
+  }
+}

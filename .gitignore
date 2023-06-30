@@ -1,0 +1,11 @@
+# Dependency directories
+node_modules/
+
+# mac隠しファイル
+.DS_Store
+
+# WordPress
+db_data
+themes/*
+
+wp/

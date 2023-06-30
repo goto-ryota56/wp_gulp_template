@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700;800&display=swap");
+@font-face {
+  font-family: "corporate";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/common/font/Corporate-Logo-Rounded-Bold-ver3.woff) format("woff2");
+}
+@font-face {
+  font-family: "vag";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/common/font/VAG_Rounded_Std_Bold.woff) format("woff2");
+}
+:root {
+  --ff_main: "M PLUS Rounded 1c", "Helvetica Neue", "Segoe UI", "Hiragino Kaku Gothic ProN", "Hiragino Sans", meiryo,
+  	sans-serif;
+  --ff_corp: "corporate";
+  --ff_vag: "vag";
+  --color_dark: #000000;
+  --color_light: #ffffff;
+  --color_sky: #0cc6de;
+  --color_sky_light: #94ddec;
+  --color_sky_light2: #a4dceb;
+  --color_sky_dark: #0c94b3;
+  --color_bl: #0941a3;
+  --color_gr: #5dca3c;
+  --color_yw: #fed100;
+  --color_yw2: #f4e39b;
+  --fz_xs: 12px;
+  --fz_sm: 14px;
+  --fz_md: 16px;
+  --fz_lg: 18px;
+  --fz_xl: 20px;
+  --lh_xs: 1.25;
+  --lh_sm: 1.5;
+  --lh_md: 1.75;
+  --lh_lg: 2;
+  --fw_r: 400;
+  --fw_b: 900;
+}
+@media screen and (max-width: 1024px) {
+  :root {
+    --fz_xs: 10px;
+    --fz_sm: 12px;
+    --fz_md: 14px;
+    --fz_lg: 16px;
+    --fz_xl: 18px;
+    --lh_xs: 1.2;
+    --lh_sm: 1.4;
+    --lh_md: 1.6;
+    --lh_lg: 1.8;
+  }
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin-left: 0;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+  border-top-width: 1px;
+  margin: 0;
+  clear: both;
+  color: inherit;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: inherit;
+}
+
+address {
+  font-style: inherit;
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: inherit;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+svg,
+img,
+embed,
+object,
+iframe {
+  vertical-align: bottom;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none;
+  appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  text-align: inherit;
+  text-transform: inherit;
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  cursor: pointer;
+}
+
+button:disabled,
+[type=button]:disabled,
+[type=reset]:disabled,
+[type=submit]:disabled {
+  cursor: default;
+}
+
+:-moz-focusring {
+  outline: auto;
+}
+
+select:disabled {
+  opacity: inherit;
+}
+
+option {
+  padding: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+label[for] {
+  cursor: pointer;
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+[contenteditable]:focus {
+  outline: auto;
+}
+
+table {
+  border-color: inherit;
+  border-collapse: collapse;
+}
+
+caption {
+  text-align: left;
+}
+
+td,
+th {
+  vertical-align: top;
+  padding: 0;
+}
+
+th {
+  text-align: left;
+  font-weight: 700;
+}
+
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+  width: 100%;
+  font-family: var(--ff_main);
+  font-weight: 500;
+  scroll-padding-top: 90px;
+}
+@media screen and (max-width: 768px) {
+  html {
+    scroll-padding-top: 70px;
+  }
+}
