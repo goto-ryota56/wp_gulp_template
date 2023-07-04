@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+@use './base/variables' as *;
+@use './base/reset' as *;
+@use './base/mixin' as *;
+@use './base/functions' as *;
+
+// common styles
+html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	height: 100%;
+	width: 100%;
+	font-family: var(--ff_main);
+	font-size: 100%;
+	background: var(--c_light);
+	color: var(--c_dark);
+}
+
+header {
+	width: 100%;
+	background: #0f0f0f;
+	height: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 2.5%;
+	h1 {
+		width: 100px;
+		height: auto;
+		color: var(--c_light);
+	}
+	nav {
+		width: calc(100% - 120px);
+		ul {
+			display: flex;
+			justify-content: flex-end;
+			column-gap: 2%;
+			li {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				a {
+					color: var(--c_light);
+				}
+			}
+		}
+	}
+}
+main {
+	width: 100%;
+}
+footer {
+	width: 100%;
+	height: 100px;
+	background: #0f0f0f;
+}

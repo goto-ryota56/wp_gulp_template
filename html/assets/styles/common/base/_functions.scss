@@ -1,0 +1,26 @@
+@charset "UTF-8";
+@use 'sass:math';
+
+// root font-size:62.5%
+// @function clp($minFontSize, $maxFontSize, $minViewport, $maxViewport) {
+// 	$fontSizeRate: $maxFontSize - $minFontSize;
+// 	$viewportRate: $maxViewport - $minViewport;
+// 	$changingSize: math.div(math.round(math.div($fontSizeRate, $viewportRate) * 10000), 100);
+// 	$fixedSize: math.div(math.round($minFontSize - math.div($fontSizeRate, $viewportRate) * $minViewport), 10);
+// 	$minRemFontSize: math.div($minFontSize, 10);
+// 	$maxRemFontSize: math.div($maxFontSize, 10);
+
+// 	@return clamp(#{$minRemFontSize}rem, #{$fixedSize}rem + #{$changingSize}vw, #{$maxRemFontSize}rem);
+// }
+
+// root font-size:100%
+@function clp($minFontSize, $maxFontSize, $minViewport, $maxViewport) {
+	$fontSizeRate: $maxFontSize - $minFontSize;
+	$viewportRate: $maxViewport - $minViewport;
+	$changingSize: math.div(math.round(math.div($fontSizeRate, $viewportRate) * 10000), 100);
+	$fixedSize: math.div(math.round(($minFontSize - math.div($fontSizeRate, $viewportRate) * $minViewport) * 62.5), 1000);
+	$minRemFontSize: math.div(math.round($minFontSize * 62.5), 1000);
+	$maxRemFontSize: math.div(math.round($maxFontSize * 62.5), 1000);
+
+	@return clamp(#{$minRemFontSize}rem, #{$fixedSize}rem + #{$changingSize}vw, #{$maxRemFontSize}rem);
+}
