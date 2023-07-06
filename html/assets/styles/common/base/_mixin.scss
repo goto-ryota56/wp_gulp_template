@@ -2,32 +2,31 @@
 
 // 変数の定義
 $breakpoint: (
-  "sm": "screen and (max-width: 600px)",
-  "md": "screen and (max-width: 768px)",
-  "lg": "screen and (max-width: 1024px)",
+	'sm': 'screen and (max-width: 600px)',
+	'md': 'screen and (max-width: 768px)',
+	'lg': 'screen and (max-width: 1024px)',
 ) !default;
 
 // staticResponsive
 @mixin break($select: md) {
-  @media #{map-get($breakpoint, $select)} {
-    @content;
-  }
+	@media #{map-get($breakpoint, $select)} {
+		@content;
+	}
 }
 
 // customResponsive
 @mixin break_c($num) {
-  @media screen and (max-width: ($num + px)) {
-    @content;
-  }
+	@media screen and (max-width: ($num + px)) {
+		@content;
+	}
 }
 
 // linehight
 @mixin lh_c($num: 16, $line: 24) {
-  line-height: calc($line / $num);
+	line-height: calc($line / $num);
 }
 
 // letter-spacing
 @mixin ls($num: 0) {
-  letter-spacing: calc($num / 1000) + em;
+	letter-spacing: calc($num / 1000) + em;
 }
-

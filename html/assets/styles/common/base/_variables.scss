@@ -1,44 +1,44 @@
 @charset "UTF-8";
-@use "./mixin" as *;
+@use './mixin' as *;
 
 // ff import
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;700&display=swap');
 
 :root {
-  // font family
-  --ff_main: "Noto Sans JP", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+	// font family
+	--ff_main: 'Noto Sans JP', 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
 
-  // color
-  --c_dark: #000000;
-  --c_light: #ffffff;
+	// color
+	--c_dark: #000000;
+	--c_light: #ffffff;
 
-  // font size
-  --fz_xs: 12px;
-  --fz_sm: 14px;
-  --fz_md: 16px;
-  --fz_lg: 18px;
-  --fz_xl: 20px;
+	// font size
+	--fz_xs: 12px;
+	--fz_sm: 14px;
+	--fz_md: 16px;
+	--fz_lg: 18px;
+	--fz_xl: 20px;
 
-  // line height
-  --lh_xs: 1.25;
-  --lh_sm: 1.5;
-  --lh_md: 1.75;
-  --lh_lg: 2;
+	// line height
+	--lh_xs: 1.25;
+	--lh_sm: 1.5;
+	--lh_md: 1.75;
+	--lh_lg: 2;
 
-  // font weight
-  --fw_r: 300;
-  --fw_m: 500;
-  --fw_b: 700;
+	// font weight
+	--fw_r: 300;
+	--fw_m: 500;
+	--fw_b: 700;
 
-  @include break(lg) {
-    --fz_xs: 10px;
-    --fz_sm: 12px;
-    --fz_md: 14px;
-    --fz_lg: 16px;
-    --fz_xl: 18px;
-    --lh_xs: 1.2;
-    --lh_sm: 1.4;
-    --lh_md: 1.6;
-    --lh_lg: 1.8;
-  }
+	@include break(lg) {
+		--fz_xs: 10px;
+		--fz_sm: 12px;
+		--fz_md: 14px;
+		--fz_lg: 16px;
+		--fz_xl: 18px;
+		--lh_xs: 1.2;
+		--lh_sm: 1.4;
+		--lh_md: 1.6;
+		--lh_lg: 1.8;
+	}
 }
