@@ -3,16 +3,13 @@
 const bs = require('browser-sync');
 const {src, dest, series, watch} = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
-const rename = require('gulp-rename');
 const plumber = require('gulp-plumber');
 const imageMin = require('gulp-imagemin');
 const mozjpeg = require('imagemin-mozjpeg');
 const pngquant = require('imagemin-pngquant');
-const changed = require('gulp-changed');
 const htmlmin = require('gulp-htmlmin');
 const connectSSI = require('connect-ssi');
 const del = require('del');
-const path = require('path');
 
 // BrowserSync
 function bsInit(done) {

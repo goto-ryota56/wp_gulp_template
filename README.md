@@ -6,8 +6,8 @@ HTML を使用した静的コーディングと、WordPress 制作に特化し�
 
 ## 環境
 
--   gulp v4.0.2
--   node v16.15.0
+- gulp v4.0.2
+- node v16.15.0
 
 <br>
 
